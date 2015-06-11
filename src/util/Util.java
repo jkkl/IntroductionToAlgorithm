@@ -13,4 +13,11 @@ public class Util {
 			System.out.print(A[i] + " ");
 		}
 	}
+	
+	public static void printArray(int A[]){
+		System.out.print("\n");
+		for (int i = 0; i < A.length; i++) {
+			System.out.print(A[i] + " ");
+		}
+	}
 }
