@@ -13,6 +13,7 @@ public class HeapSort {
 		// TODO Auto-generated constructor stub
 		heap = A;
 		heapSize = A.length-1;
+		//Integer.MAX_VALUE 
 	}
 	
 	public HeapSort(int[] A, int _heapSize) {
@@ -153,7 +154,7 @@ public class HeapSort {
 		return max;
 	}
 	
-	void testHeapSort(int A[]){
+	static void testHeapSort(int A[]){
 		HeapSort hSort = new HeapSort(A);
 		hSort.heapSort(A);
 		System.out.println("\n");
@@ -184,7 +185,7 @@ public class HeapSort {
 	
 	public static void main(String args[]) {
 		int A[] = {0,4,9,1,100, 60, 40, 90 };
-		
+		testHeapSort(A);
 		testPriorityQueue(A);
 		
 	}
